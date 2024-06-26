@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    height: 100vh
+}
 
 
 @font-face {
@@ -13,7 +16,7 @@
     }
 
 .contenedor{
-    height: 100vh;
+  
     display: grid;
     grid-auto-rows: 22rem;
     gap: 20px;
@@ -22,7 +25,7 @@
     grid-template: 
     "nav nav nav " 200px
     "main main main" 980px
-    "footer footer footer" 200px/400px;
+    ;
 
     .navbar{
         grid-area: nav;
@@ -39,10 +42,7 @@
         
     }
 
-    .footer{
-        grid-area: footer;
-        background-color: rgba(0, 0, 0, 0.726);
-    }
+   
 /* 
     @media (min-width:576px){
     grid-template: 
@@ -233,6 +233,7 @@ margin-top: 20px;
     
 }
 
+
 /* estilo al titulo de las cajas */
 
 .box h3{
@@ -364,5 +365,10 @@ estilo al footer */
     background-color: lightslategray;
     border-radius: 3px;
   }
+
+  .footer{
+    grid-area: footer;
+    background-color: rgba(0, 0, 0, 0.726);
+}
   
   
